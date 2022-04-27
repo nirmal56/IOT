@@ -1,0 +1,19 @@
+$ mbed import https://github.com/janjongboom/b-l475e-iot01a-audio-mbed
+$ cd b-l475e-iot01a-audio-mbed
+cat raw-audio.txt | node converter/hex-to-buffer.js test.wav
+
+https://github.com/janjongboom/b-l475e-iot01a-audio-mbed
+https://github.com/ARMmbed/mbed-cli
+https://os.mbed.com/docs/mbed-os/v6.15/build-tools/mbed-cli-1.html
+sudo apt install python3 python3-pip git mercurial
+python3 -m pip install mbed-cli
+python3 -m pip install -U mbed-cli
+//mbed config -G ARM_PATH "C:\Program Files\ARM"
+
+mbed config ---\global GCC_ARM_PATH "C:\Program Files\ARM"
+mbed config ---\global MBED_GCC_ARM_PATH "C:\Program Files\ARM"
+$ mbed compile -t GCC_ARM -m DISCO_L475VG_IOT01A --profile=debug -f
+
+
+
+bin file->dump in stm->hex data->save in txt->nodejs converts in wav->python converts in text->same script to sends to test.mosquitto.org

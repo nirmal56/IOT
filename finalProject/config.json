@@ -1,0 +1,19 @@
+{
+    "broker_host": "localhost",
+    
+    "broker_port": 5665,
+
+    "broker_uname": "nirmal",
+
+    "broker_pass": "123456",
+    
+    "devices": [
+        {
+            "type": "Audio",
+            "publish_frequency": 1,
+            "publish_topic": "devices/Text",
+            "std_val": 25,
+            "device_count": 1
+        }
+    ]
+}

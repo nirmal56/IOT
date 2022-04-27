@@ -1,0 +1,27 @@
+{
+
+    "broker_host": "localhost",
+    
+    "broker_port": 5665,
+
+    "broker_uname": "nirmal",
+
+    "broker_pass": "123456",
+    
+    "devices": [
+        {
+            "type": "temprature",
+            "publish_frequency": 1,
+            "publish_topic": "devices/temp",
+            "std_val": 25,
+            "device_count": 1
+        },
+        {
+            "type": "humidity",
+            "publish_frequency": 1,
+            "publish_topic": "devices/hum",
+            "std_val": 40,
+            "device_count": 1
+        }
+    ]
+}
